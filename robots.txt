@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://basedannix-oss.github.io/bazydb-site/sitemap.xml
