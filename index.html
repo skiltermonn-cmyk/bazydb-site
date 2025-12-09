@@ -8,20 +8,15 @@
         body { font-family: 'Segoe UI', sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
         .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; text-align: center; }
         .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-        
-        /* Поиск */
         .search-wrapper { margin-top: 20px; position: relative; max-width: 600px; margin-left: auto; margin-right: auto; }
         input#search { width: 100%; padding: 15px 20px; font-size: 18px; border: none; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); outline: none; }
         #results { position: absolute; top: 100%; left: 0; right: 0; background: white; border-radius: 0 0 10px 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); max-height: 400px; overflow-y: auto; display: none; z-index: 100; }
         .res-item { padding: 10px 20px; border-bottom: 1px solid #eee; display: block; color: #333; text-decoration: none; }
         .res-item:hover { background: #f0f0f0; }
-
-        /* Сетка букв */
         .abc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 10px; margin-top: 40px; }
         .abc-btn { background: white; padding: 15px 5px; text-align: center; border-radius: 8px; text-decoration: none; color: #333; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.2s; border: 1px solid #eee; }
         .abc-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #764ba2; }
         .abc-btn span { display: block; font-size: 0.8em; color: #888; font-weight: normal; margin-top: 5px; }
-        
         h2 { margin-top: 40px; color: #444; border-left: 5px solid #764ba2; padding-left: 15px; }
     </style>
 </head>
@@ -29,62 +24,37 @@
     <div class="hero">
         <h1>Каталог Баз Данных РФ (2026)</h1>
         <p>Более 10287 проверенных баз компаний</p>
-        
         <div class="search-wrapper">
-            <input type="text" id="search" placeholder="Введите название базы (например: Строители)...">
+            <input type="text" id="search" placeholder="Поиск по базе (например: Строители)...">
             <div id="results"></div>
         </div>
     </div>
-
     <div class="container">
-        <h2>Каталог по алфавиту</h2>
-        <div class="abc-grid"><a href="catalog-b.html" class="abc-btn">Б <span>10287</span></a></div>
-
+        <h2>Каталог по отраслям (А-Я)</h2>
+        <div class="abc-grid"><a href="catalog-.html" class="abc-btn"># <span>1</span></a><a href="catalog-0.html" class="abc-btn">0 <span>2</span></a><a href="catalog-1.html" class="abc-btn">1 <span>12</span></a><a href="catalog-2.html" class="abc-btn">2 <span>8</span></a><a href="catalog-3.html" class="abc-btn">3 <span>7</span></a><a href="catalog-4.html" class="abc-btn">4 <span>10</span></a><a href="catalog-5.html" class="abc-btn">5 <span>6</span></a><a href="catalog-6.html" class="abc-btn">6 <span>12</span></a><a href="catalog-7.html" class="abc-btn">7 <span>6</span></a><a href="catalog-8.html" class="abc-btn">8 <span>10</span></a><a href="catalog-9.html" class="abc-btn">9 <span>10</span></a><a href="catalog-c.html" class="abc-btn">C <span>1</span></a><a href="catalog-g.html" class="abc-btn">G <span>1</span></a><a href="catalog-i.html" class="abc-btn">I <span>3</span></a><a href="catalog-p.html" class="abc-btn">P <span>1</span></a><a href="catalog-s.html" class="abc-btn">S <span>2</span></a><a href="catalog-v.html" class="abc-btn">V <span>1</span></a><a href="catalog-w.html" class="abc-btn">W <span>1</span></a><a href="catalog-yo.html" class="abc-btn">Ё <span>2</span></a><a href="catalog-a.html" class="abc-btn">А <span>350</span></a><a href="catalog-b.html" class="abc-btn">Б <span>135</span></a><a href="catalog-v.html" class="abc-btn">В <span>330</span></a><a href="catalog-g.html" class="abc-btn">Г <span>146</span></a><a href="catalog-d.html" class="abc-btn">Д <span>1365</span></a><a href="catalog-e.html" class="abc-btn">Е <span>1</span></a><a href="catalog-zh.html" class="abc-btn">Ж <span>31</span></a><a href="catalog-z.html" class="abc-btn">З <span>120</span></a><a href="catalog-i.html" class="abc-btn">И <span>190</span></a><a href="catalog-y.html" class="abc-btn">Й <span>1</span></a><a href="catalog-k.html" class="abc-btn">К <span>366</span></a><a href="catalog-l.html" class="abc-btn">Л <span>85</span></a><a href="catalog-m.html" class="abc-btn">М <span>353</span></a><a href="catalog-n.html" class="abc-btn">Н <span>141</span></a><a href="catalog-o.html" class="abc-btn">О <span>453</span></a><a href="catalog-p.html" class="abc-btn">П <span>2681</span></a><a href="catalog-r.html" class="abc-btn">Р <span>835</span></a><a href="catalog-s.html" class="abc-btn">С <span>695</span></a><a href="catalog-t.html" class="abc-btn">Т <span>1125</span></a><a href="catalog-u.html" class="abc-btn">У <span>220</span></a><a href="catalog-f.html" class="abc-btn">Ф <span>126</span></a><a href="catalog-h.html" class="abc-btn">Х <span>91</span></a><a href="catalog-ts.html" class="abc-btn">Ц <span>54</span></a><a href="catalog-ch.html" class="abc-btn">Ч <span>48</span></a><a href="catalog-sh.html" class="abc-btn">Ш <span>70</span></a><a href="catalog-sch.html" class="abc-btn">Щ <span>2</span></a><a href="catalog-e.html" class="abc-btn">Э <span>158</span></a><a href="catalog-yu.html" class="abc-btn">Ю <span>12</span></a><a href="catalog-ya.html" class="abc-btn">Я <span>7</span></a></div>
         <h2>Случайные выборки</h2>
-        <p>Популярные категории сегодня:</p>
-        <ul>
-            <li><a href="baza-dannyh-kontaktov-kompaniy-vkladnyh-stelek-podpyatochnikov-i-analogichnyh-izdeliy-rf-aktualnost-.html">База данных контактов компаний Вкладных Стелек, Подпяточников И Аналогичных Изделий РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-vkladnyh-stelek-podpyatochnikov-i-analogichnyh-izdeliy-rf-aktualnost-.html">База данных контактов компаний Вкладных Стелек, Подпяточников И Аналогичных Изделий РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-vosstanovlenie-rezinovyh-shin-i-pokryshek-rf-aktualnost-etot-god.html">База данных контактов компаний Восстановление Резиновых Шин И Покрышек РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-deyatelnost-po-obespecheniyu-bezopasnosti-v-oblasti-ispolzovaniya-ato.html">База данных контактов компаний Деятельность По Обеспечению Безопасности В Области Использования Атомной Энергии РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-deyatelnost-spetsializirovannyh-depozitariev-ipotechnogo-pokrytiya-rf.html">База данных контактов компаний Деятельность Специализированных Депозитариев Ипотечного Покрытия РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-izgotovlenie-izdeliy-metodom-poroshkovoy-metallurgii-rf-aktualnost-et.html">База данных контактов компаний Изготовление Изделий Методом Порошковой Металлургии РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-ispytaniya-i-analiz-v-oblasti-gigieny-pitaniya-vklyuchaya-veterinarny.html">База данных контактов компаний Испытания И Анализ В Области Гигиены Питания, Включая Ветеринарный Контроль И Контроль За Производством Продуктов Питания РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-ih-chastey-rf-aktualnost-etot-god.html">База данных контактов компаний Их Частей РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-kantselyarskih-prinadlezhnostey-i-skob-v-vide-polos-iz-nedragotsennyh.html">База данных контактов компаний Канцелярских Принадлежностей И Скоб В Виде Полос Из Недрагоценных Металлов РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-konditsionirovanie-vozduha-rf-aktualnost-etot-god.html">База данных контактов компаний Кондиционирование Воздуха РФ (актуальность этот год)</a></li>
-        </ul>
+        <ul><li><a href="baza-dannyh-kontaktov-kompaniy-vkladnyh-stelek-podpyatochnikov-i-analogichnyh-izdeliy-rf-aktualnost-.html">База данных контактов компаний Вкладных Стелек, Подпяточников И Аналогичных Изделий РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-vkladnyh-stelek-podpyatochnikov-i-analogichnyh-izdeliy-rf-aktualnost-.html">База данных контактов компаний Вкладных Стелек, Подпяточников И Аналогичных Изделий РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-vosstanovlenie-rezinovyh-shin-i-pokryshek-rf-aktualnost-etot-god.html">База данных контактов компаний Восстановление Резиновых Шин И Покрышек РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-deyatelnost-po-obespecheniyu-bezopasnosti-v-oblasti-ispolzovaniya-ato.html">База данных контактов компаний Деятельность По Обеспечению Безопасности В Области Использования Атомной Энергии РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-deyatelnost-spetsializirovannyh-depozitariev-ipotechnogo-pokrytiya-rf.html">База данных контактов компаний Деятельность Специализированных Депозитариев Ипотечного Покрытия РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-izgotovlenie-izdeliy-metodom-poroshkovoy-metallurgii-rf-aktualnost-et.html">База данных контактов компаний Изготовление Изделий Методом Порошковой Металлургии РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-ispytaniya-i-analiz-v-oblasti-gigieny-pitaniya-vklyuchaya-veterinarny.html">База данных контактов компаний Испытания И Анализ В Области Гигиены Питания, Включая Ветеринарный Контроль И Контроль За Производством Продуктов Питания РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-ih-chastey-rf-aktualnost-etot-god.html">База данных контактов компаний Их Частей РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-kantselyarskih-prinadlezhnostey-i-skob-v-vide-polos-iz-nedragotsennyh.html">База данных контактов компаний Канцелярских Принадлежностей И Скоб В Виде Полос Из Недрагоценных Металлов РФ (актуальность этот год)</a></li><li><a href="baza-dannyh-kontaktov-kompaniy-konditsionirovanie-vozduha-rf-aktualnost-etot-god.html">База данных контактов компаний Кондиционирование Воздуха РФ (актуальность этот год)</a></li></ul>
     </div>
-
-    <!-- Загружаем данные для поиска (асинхронно, не тормозит страницу) -->
     <script src="search_data.js"></script>
     <script>
         const searchInput = document.getElementById('search');
         const resultsDiv = document.getElementById('results');
-
         searchInput.addEventListener('input', function() {
             const query = this.value.toLowerCase().trim();
             resultsDiv.innerHTML = '';
-            
-            if (query.length < 2) {
-                resultsDiv.style.display = 'none';
-                return;
-            }
-
-            // Фильтруем данные из searchData (загружен из файла)
-            // Показываем максимум 20 результатов для скорости
+            if (query.length < 2) { resultsDiv.style.display = 'none'; return; }
             const filtered = searchData.filter(item => item.t.toLowerCase().includes(query)).slice(0, 20);
-
             if (filtered.length > 0) {
                 filtered.forEach(item => {
                     const a = document.createElement('a');
-                    a.href = item.u;
-                    a.className = 'res-item';
-                    a.textContent = item.t;
+                    a.href = item.u; a.className = 'res-item'; a.textContent = item.t;
                     resultsDiv.appendChild(a);
                 });
                 resultsDiv.style.display = 'block';
-            } else {
-                resultsDiv.style.display = 'none';
-            }
+            } else { resultsDiv.style.display = 'none'; }
         });
-        
-        // Скрыть результаты при клике вне поля
         document.addEventListener('click', function(e) {
-            if (!searchInput.contains(e.target) && !resultsDiv.contains(e.target)) {
-                resultsDiv.style.display = 'none';
-            }
+            if (!searchInput.contains(e.target) && !resultsDiv.contains(e.target)) { resultsDiv.style.display = 'none'; }
         });
     </script>
 </body>
